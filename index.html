@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🔒 Subdomain Takeover -- mt-link.yamersal.com</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            line-height: 1.6;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: #2c3e50;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .vulnerability-alert {
+            background: #e74c3c;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+            padding: 20px;
+            border-left: 4px solid #3498db;
+            background: #f8f9fa;
+        }
+        
+        .warning {
+            border-left-color: #e74c3c;
+            background: #ffeaa7;
+        }
+        
+        h2 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+        
+        .status-indicator {
+            display: inline-block;
+            padding: 5px 15px;
+            border-radius: 20px;
+            color: white;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        
+        .vulnerable {
+            background: #e74c3c;
+        }
+        
+        .secure {
+            background: #27ae60;
+        }
+        
+        .dns-info {
+            background: #34495e;
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            font-family: 'Courier New', monospace;
+            margin: 15px 0;
+        }
+        
+        .timestamp {
+            text-align: center;
+            color: #7f8c8d;
+            font-style: italic;
+            margin-top: 30px;
+        }
+        
+        .exploit-demo {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🔐 NULL200OK Security Research </h1>
+            <p>Subdomain Takeover Vulnerability Assessment</p>
+        </div>
+        
+        <div class="vulnerability-alert">
+            ⚠️ ACTIVE SUBDOMAIN TAKEOVER VULNERABILITY DETECTED
+        </div>
+        
+        <div class="content">
+            <div class="section warning">
+                <h2>Current Status</h2>
+                <span class="status-indicator vulnerable">VULNERABLE</span>
+                <p><strong>Domain:</strong> ********************</p>
+                <p><strong>Risk Level:</strong> HIGH</p>
+                <p><strong>Last Checked:</strong> <span id="current-time"></span></p>
+            </div>
+            
+            <div class="section">
+                <h2>DNS Configuration Analysis</h2>
+                <div class="dns-info">
+                    SUBDOMAIN TAKEOVER VULNERABILITY
+                </div>
+                <p><strong>Issue:</strong> CNAME record points to external service that could be claimed by attackers </p>
+            </div>
+            
+            <div class="section">
+                <h2>Potential Attack Scenarios</h2>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li>Phishing campaigns using your legitimate domain</li>
+                    <li>Malware distribution hosting</li>
+                    <li>Cookie stealing and session hijacking</li>
+                    <li>Search engine poisoning</li>
+                    <li>Brand reputation damage</li>
+                </ul>
+            </div>
+            
+            <div class="exploit-demo">
+                <h2 style="color: #ecf0f1;">Proof of Concept</h2>
+                <p>This page demonstrates that an attacker could:</p>
+                <ul style="margin-left: 20px; margin-top: 10px; color: #bdc3c7;">
+                    <li>Host any content on your subdomain</li>
+                    <li>Steal user credentials</li>
+                    <li>Distribute malicious software</li>
+                    <li>Damage your organization's reputation</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h2>Remediation Required</h2>
+                <ol style="margin-left: 20px; margin-top: 10px;">
+                    <li>You Lose The Game :) </li>
+                    <li>Far a Way</li>
+                    <li>Over The sea</li>
+                    <li>God By subdomain</li>
+                </ol>
+            </div>
+            
+            <div class="timestamp">
+                Security Research NULL200OK <br>
+                Generated: <span id="generated-time"></span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Add current timestamp
+        const now = new Date();
+        document.getElementById('current-time').textContent = now.toLocaleString();
+        document.getElementById('generated-time').textContent = now.toLocaleString();
+        
+        // Simulate security scan
+        console.log('🔍 Security Scan Running...');
+        console.log('📍 Target: ********************');
+        console.log('🎯 Status: VULNERABLE - Subdomain Takeover ');
+        console.log('⚠️  Action Required: Just Watching ');
+    </script>
+</body>
+</html>
